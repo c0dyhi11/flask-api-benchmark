@@ -11,6 +11,6 @@ if [ $# -eq 0 ]; then
 elif [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
     show_usage
 else
-    docker run -d -p 8080:8080 $i
+    docker run -d -p 8080:8080 $1
 fi
 

@@ -4,7 +4,6 @@ COPY ./*.* /app/
 WORKDIR /app
 
 RUN bash install-nginx.sh
-EXPOSE 80
 
 RUN set -ex \
     && BUILD_DEPS=" \
